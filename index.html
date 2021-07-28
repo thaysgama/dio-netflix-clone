@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/netflix-logo.svg" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Netflix - Thriller</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#filme-principal">
+                <img class="logo" src="./img/netflix-logo-0.png" alt="netflix-logo">
+            </a>
+            
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#filme-principal">Início</a></li>
+                    <li><a href="#sugestoes">Sugestões</a></li>
+                    <li><a href="#filmes">Filmes</a></li>
+                </ul>
+                
+            </nav>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menu</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#filme-principal">Início</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#sugestoes">Sugestões</a></li>
+                    <li><a class="dropdown-item" href="#filmes">Filmes</a></li>
+                </ul>
+                </li>
+              </ul>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="filme-principal" id="filme-principal">
+            <div class="container">
+                <h3 class="titulo">FRAGMENTADO</h3>
+                <p class="descricao">
+                    Kevin possui 23 personalidades distintas e consegue alterná-las quimicamente em seu organismo apenas com a força do pensamento. Um dia, ele sequestra três adolescentes que encontra em um estacionamento. Vivendo em cativeiro, elas passam a conhecer as diferentes facetas de Kevin e precisam encontrar algum meio de escapar.</p>
+                    <div class="botoes">
+                        <button role="button" class="botao botao-assistir">
+                            <i class="fas fa-play"></i>
+                            Assistir agora
+                        </button>
+                        <button role="button" class="botao botao-info">
+                            <i class="fas fa-info-circle"></i>
+                            Mais informações
+                        </button>
+                    </div>
+            </div>
+            
+        </div>
+
+        <div class="carrosel-filmes" id="sugestoes">
+            <h3 class="destaques">
+                Sugestões
+            </h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box-filme get-out"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme hereditary"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme memento"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme midsommar"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme psicose" onclick="document.getElementById('somPsycho').play();"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme s-island"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme s-lambs"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carrosel-filmes" id="filmes">
+            <h3 class="destaques">
+                Assista novamente
+            </h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box-filme cabin-woods"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme train-busan"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme it"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme bacurau"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme quiet-place"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme conjuring"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme sixth-sense"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrosel-filmes" id="filmes">
+            <h3 class="destaques">
+                Filmes
+            </h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box-filme shining"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme us"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme jaws"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme split"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme platform"></div>
+                </div>
+                <div class="item">
+                    <div class="box-filme handmaid"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+        <p>Copyright©</p>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- som -->
+    <audio src="sound/Psycho-Violin-Screech-Sound-Effect.mp3" preload="auto" id="somPsycho"></audio>
+    <!-- icones -->
+    <script src="https://kit.fontawesome.com/0dd8173ea9.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/owl/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: var(--preta);
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+header{
+    position: fixed;
+    background-color: var(--preta);
+    width: 100%;
+    z-index: 2;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 180px;
+    color: white;
+}
+
+header ul{
+    display: flex;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    transition: .4s ease;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+header .dropdown-toggle{
+    color: #AAA;
+}
+
+header .dropdown-toggle:hover,
+header .dropdown-toggle:focus{
+    color: #fff;
+}
+
+header .dropdown-item:active{
+    background-color:  var(--vermelho);
+}
+
+
+.filme-principal{
+    font-size: 1rem;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('../img/split.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.botao{
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .2s ease all;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.botao-info{
+    background-color: rgba(180, 180, 180, 0.5);
+    color: white;
+}
+
+.botao-assistir{
+    background-color: white;
+    color: black;
+}
+
+.botao:hover{
+    opacity: .5;
+}
+
+.botao i{
+    margin-right:8px ;
+}
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.destaques{
+    margin: 10px 20px;
+}
+
+#sugestoes{
+    padding-top: 80px;
+}
+
+.box-filme{
+    height:  180px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    margin: 20px;
+    transition: 0.4s ease all;
+}
+
+.box-filme:hover,
+.box-filme:active{
+    transform: scale(1.2);
+}
+
+
+.get-out{
+    background-image: url('../img/get-out-banner.png');
+}
+.get-out:hover{
+    background-image: url('../img/get-out.gif');
+}
+
+
+.hereditary{
+    background-image: url('../img/hereditary-banner.jpg');
+}
+.hereditary:hover{
+    background-image: url('../img/hereditary.gif');
+}
+
+
+.memento{
+    background-image: url('../img/memento-banner.jpg');
+}
+.memento:hover{
+    background-image: url('../img/memento.gif');
+}
+
+
+.midsommar{
+    background-image: url('../img/midsommar-banner.jpg');
+}
+.midsommar:hover{
+    background-image: url('../img/midsommar.gif');
+}
+
+
+.psicose{
+    background-image: url('../img/psicose-banner.jpg');
+}
+.psicose:hover{
+    background-image: url('../img/psicose.gif');
+}
+
+
+
+.s-island{
+    background-image: url('../img/shutter-island-banner.jpg');
+}
+.s-island:hover{
+    background-image: url('../img/shutter-island.gif');
+}
+
+
+.s-lambs{
+    background-image: url('../img/silence-of-the-lambs-banner.jpg');
+}
+.s-lambs:hover{
+    background-image: url('../img/silence-of-the-lambs.gif');
+}
+
+
+.handmaid{
+    background-image: url('../img/the-handmaid-banner.jpg');
+}
+.handmaid:hover{
+    background-image: url('../img/the-handmaid.gif');
+}
+
+
+.shining{
+    background-image: url('../img/the-shining-banner.jpg');
+}
+.shining:hover{
+    background-image: url('../img/the-shining.gif');
+}
+
+
+.us{
+    background-image: url('../img/us-banner.jpg');
+}
+.us:hover{
+    background-image: url('../img/us.gif');
+}
+
+
+.cabin-woods{
+    background-image: url('../img/the-cabin-in-the-woods-banner.png');
+}
+.cabin-woods:hover{
+    background-image: url('../img/the-cabin-in-th-woods.gif');
+}
+
+
+
+.train-busan{
+    background-image: url('../img/train-to-busan.jpg');
+}
+.train-busan:hover{
+    background-image: url('../img/train-to-busan.gif');
+}
+
+
+.it{
+    background-image: url('../img/it-banner.jpg');
+}
+.it:hover{
+    background-image: url('../img/it.gif');
+}
+
+
+.bacurau{
+    background-image: url('../img/bacurau-banner.jpg');
+}
+.bacurau:hover{
+    background-image: url('../img/bacurau.gif');
+}
+
+
+.quiet-place{
+    background-image: url('../img/a-quiet-place.jpg');
+}
+.quiet-place:hover{
+    background-image: url('../img/a-quiet-place.gif');
+}
+
+
+.conjuring{
+    background-image: url('../img/The-Conjuring-banner.jpg');
+}
+.conjuring:hover{
+    background-image: url('../img/the-conjuring.gif');
+}
+
+
+.sixth-sense{
+    background-image: url('../img/sixth-sense.png');
+}
+.sixth-sense:hover{
+    background-image: url('../img/sixth-sense.gif');
+}
+
+
+.platform{
+    background-image: url('../img/platform.jpg');
+}
+.platform:hover{
+    background-image: url('../img/platform.gif');
+}
+
+.jaws{
+    background-image: url('../img/jaws-banner.jpg');
+}
+.jaws:hover{
+    background-image: url('../img/jaws.gif');
+}
+
+.split{
+    background-image: url('../img/split-banner.jpg');
+}
+.split:hover{
+    background-image: url('../img/split.gif');
+}
+
+footer{
+    min-height: 150px;
+    color: #AAA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+.icons i{
+    color: #AAA;
+    margin: 10px 5px;
+}
+
+.icons i:hover{
+    color: var(--vermelho);
+}
+
+@media screen and (max-width:700px){
+    header .nav-desktop{
+        display: none
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:701px){
+    header .nav-pills{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .descricao{
+        width: 50%;
+    }
+}
