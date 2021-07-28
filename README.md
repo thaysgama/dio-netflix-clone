@@ -20,3 +20,4 @@ Obs.:
 
 3 - Um dos filmes contém áudio que é acionado no click. Adivinhe qual.
 
+4 - Foi utilizado também o auxilio do bootstrap para criar um menu deslizante para mobile
